@@ -1,11 +1,11 @@
 package Class::AutoPlug::Pluggable;
-# use Smart::Comments;
+# AutoPluguse Smart::Comments;
 use Class::AutoPlug::ResultState;
 use Devel::Peek;
 use Sub::Installer;
 
 our $AUTOLOAD;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Methods to call for each plugin to finish initialization.
 my @init_methods = qw(_load_methods _set_hooks);

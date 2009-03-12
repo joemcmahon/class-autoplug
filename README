@@ -1,4 +1,4 @@
-Class-Pluggability
+Class::AutoPlug
 
 This module provides a basic framework for defining plugin-based classes and their plugins based on attributes.
 
@@ -16,21 +16,21 @@ SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the perldoc command.
 
-    perldoc Class::Pluggability
+    perldoc Class::AutoPlug
 
 You can also look for information at:
 
     Search CPAN
-        http://search.cpan.org/dist/Class-Pluggability
+        http://search.cpan.org/dist/Class-AutoPlug
 
     CPAN Request Tracker:
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Class-Pluggability
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Class-AutoPlug
 
     AnnoCPAN, annotated CPAN documentation:
-        http://annocpan.org/dist/Class-Pluggability
+        http://annocpan.org/dist/Class-AutoPlug
 
     CPAN Ratings:
-        http://cpanratings.perl.org/d/Class-Pluggability
+        http://cpanratings.perl.org/d/Class-AutoPlug
 
 COPYRIGHT AND LICENCE
 

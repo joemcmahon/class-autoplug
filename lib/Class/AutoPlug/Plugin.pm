@@ -8,7 +8,7 @@ no warnings 'redefine';
 
 use Attribute::Handlers;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 ### Loaded Plugin base
 # This attribute handler exports a plugin's method into the 
 # corresponding ::Pluggable class.
@@ -109,14 +109,12 @@ add the name of your plugin to your keys to help keep them unique.
 =head2 sub local_impl :Prehook(base_method_name)
 
 Addes B<local_impl()> as a prehook to the I<base> class's B<base_method_name> method. Again,
-the name is a literal bareword. You get a reference to the pluggable object and the contents of
-@_ at the time of the method call.
-
-If you want to skip the method call and handle the call yourself, return 1. If you want processing
-to go ahead and call the method after doing whatever it is you choose, return 0.
+the name is a literal bareword. You get a reference to the pluggable object and a 
+Class::AutoPlug::ResultState object. You can alter the ResultState object to change the contents of
+@_ and/or the result value.
 
 =head2 sub local_impl :Posthook(base_method_name)
 
 Exactly like :Prehook, except that the posthook gets the current return value and can alter it as
-it chooses (or leave it alone). If you choose to alter it, return a list of (1, @new_return_values);
-if you choose not to, return 0.
+it chooses (or leave it alone). Again, you get a Class::AutoPlug::ResultState object, which you can 
+alter to change AutoPlug@_ or the method result.

@@ -2,7 +2,7 @@ package Class::AutoPlug::ResultState;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub new {
 	my($class, $arg_ref) = @_;
@@ -162,7 +162,7 @@ Sets/gets the context in which the original method call was made. Hooks will rec
 ResultState object with this already set up; it is a bad idea to change it, as this will
 cause other plugins to return values which may be useless in the true context.
 
-Again, C<Class::AutoPLug::Pluggable> (and any derived classes) should set this; hooks should not.
+Again, C<Class::AutoPlug::Pluggable> (and any derived classes) should set this; hooks should not.
 
 =head2 skip_method_call(true or false)
 
