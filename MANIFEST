@@ -1,0 +1,18 @@
+Changes
+example/demo.pl
+example/Vacuum.pm
+example/Vacuum/Pluggable.pm
+example/Vacuum/Plugin/Screamer.pm
+lib/Class/AutoPlug/Pluggable.pm
+lib/Class/AutoPlug/Plugin.pm
+lib/Class/AutoPlug/ResultState.pm
+Makefile.PL
+MANIFEST
+META.yml			# Will be created by "make dist"
+README
+t/00-load.t
+t/boilerplate.t
+t/demo-check.t
+t/pod-coverage.t
+t/pod.t
+t/resultstate.t

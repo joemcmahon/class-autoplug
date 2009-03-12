@@ -1,0 +1,18 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Class-AutoPlug
+version:      0.01
+version_from: lib/Class/AutoPlug/Pluggable.pm
+installdirs:  site
+requires:
+    Attribute::Handlers:           0
+    Carp:                          0
+    Devel::Peek:                   0
+    Module::Pluggable:             0
+    Smart::Comments:               0
+    Sub::Installer:                0
+    Test::Exception:               0
+    Test::More:                    0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30

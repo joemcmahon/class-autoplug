@@ -1,0 +1,7 @@
+Revision history for Class-Pluggability
+
+0.01    2006-11-28
+        First version, released on an unsuspecting world.
+		- Implements basic functions.
+		- No alteration of parameters by prehooks.
+
