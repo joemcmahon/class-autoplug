@@ -6,7 +6,7 @@ WriteMakefile(
     NAME                => 'Class::AutoPlug',
     AUTHOR              => 'Joe McMahon <mcmahon@ibiblio.org>',
     VERSION_FROM        => 'lib/Class/AutoPlug/Pluggable.pm',
-#   ABSTRACT_FROM       => 'lib/Class/AutoPlug/Pluggable.pm',
+    LICENSE             => 'artistic',
     PL_FILES            => {},
     PREREQ_PM => {
 		'Carp' => 0,
@@ -14,7 +14,6 @@ WriteMakefile(
 		'Devel::Peek' => 0,
 		'Sub::Installer' => 0,
 		'Test::Exception' => 0,
-		'Smart::Comments' => 0,
 		'Module::Pluggable' => 0,
 		'Attribute::Handlers' => 0,
     },

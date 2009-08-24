@@ -7,12 +7,11 @@ lib/Class/AutoPlug/Pluggable.pm
 lib/Class/AutoPlug/Plugin.pm
 lib/Class/AutoPlug/ResultState.pm
 Makefile.PL
-MANIFEST
-META.yml			# Will be created by "make dist"
+MANIFEST			This list of files
 README
 t/00-load.t
 t/boilerplate.t
-t/demo-check.t
 t/pod-coverage.t
 t/pod.t
 t/resultstate.t
+xt/demo-check.t

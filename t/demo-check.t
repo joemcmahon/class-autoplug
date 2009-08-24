@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
-use Test::Differences;
+use Test::More;
+plan tests => 1;
 
 my $expected = <<EOS;
 RUNNING!!!!!
@@ -18,4 +18,4 @@ This was changed
 EOS
 
 my $got = `perl -Iblib/lib -Iexample example/demo.pl`;
-eq_or_diff $got, $expected;
+is $got, $expected;
